@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .decision-include {
+    @apply bg-emerald-50 border-emerald-200 text-emerald-800;
+  }
+  .decision-exclude {
+    @apply bg-red-50 border-red-200 text-red-800;
+  }
+  .decision-maybe {
+    @apply bg-amber-50 border-amber-200 text-amber-800;
+  }
+  .decision-pending {
+    @apply bg-slate-50 border-slate-200 text-slate-500;
+  }
+}
